@@ -1,0 +1,256 @@
+<html lang="en">
+  <head>
+    <title>MATHS FOR FUN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 15px;
+
+        border-radius: 50%;
+      }
+
+      .button:hover {
+        background-color: #3e8e41;
+      }
+
+      .button:active {
+        /*background-color: #3e8e41;*/
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        background-color: #3e8e41;
+      }
+      .sidebar {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 16px;
+      }
+
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidebar {
+          padding-top: 15px;
+        }
+        .sidebar a {
+          font-size: 18px;
+        }
+      }
+
+      #logo {
+        /*padding-top: 20px;*/
+        /*padding-bottom: 20px;*/
+        height: 150px;
+      }
+      .home_css {
+        margin-left: 10px;
+        /*padding-top: 10px;*/
+        /*padding-bottom: 20px;*/
+      }
+      /*#selected
+{
+  color: #f1f1f1
+}*/
+      div.card {
+        margin-top: 5px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="/ixl-favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" style="border-radius: 35%; width: 100px; height: 100px;"></a>
+    </div>
+   <div class="topnav-right" style="margin:auto;width:1000px;">
+    <a href="tutorial.html"><i class="fa fa-home" style="font-size:36px;">
+
+</i>
+
+</a>
+    
+  </div>
+  </div>
+</nav> -->
+    <div class="sidebar">
+      <a class="navbar-brand" href="tutorial.html" id="logo"
+        ><img
+          src="img/logo.png"
+          style="border-radius: 35%; width: 100px; height: 100px;"
+      /></a>
+      <a href="tutorial.html" class="home_css">Tutorial </a>
+      <a
+        href="index.html"
+        class="home_css"
+        style="color: #f1f1f1; text-decoration: underline;"
+        >Counting</a
+      >
+      <a href="index2.html" class="home_css">Addition</a>
+      <a href="index3.html" class="home_css">Subtraction</a>
+      <a href="index4.html" class="home_css">Count Money</a>
+
+      <!--  <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+  <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+  <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a> -->
+    </div>
+    <div
+      style="
+        width: 500px;
+        margin: auto;
+        padding-top: 40px;
+        font-family: 'Rockwell';
+        font-size: 30px;
+        color: purple;
+      "
+    >
+      COUNT ME!
+    </div>
+    <div class="card" style="width: 800px; margin: auto;">
+      <div style="width: 700px; height: 250px;">
+        <img
+          class="card-img-top"
+          src="img/dogs.png"
+          alt="Card image cap"
+          style="max-height: 100%; display: block; margin-left: 50px;"
+        />
+      </div>
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <button class="button" id="1" value="1" onclick="myFunction()">
+            1
+          </button>
+          <button class="button" id="2" value="2" onclick="myFunction()">
+            2
+          </button>
+          <button class="button" id="3" value="3" onclick="myFunction()">
+            3
+          </button>
+          <button class="button" id="4" value="4" onclick="myFunction()">
+            4
+          </button>
+          <button class="button" id="5" value="5" onclick="myFunction('5')">
+            5
+          </button>
+          <button class="button" id="6" value="6" onclick="myFunction()">
+            6
+          </button>
+          <button class="button" id="7" value="7" onclick="myFunction()">
+            7
+          </button>
+          <button class="button" id="8" value="8" onclick="myFunction()">
+            8
+          </button>
+          <button class="button" id="9" value="9" onclick="myFunction()">
+            9
+          </button>
+        </h5>
+
+        <!-- /*<a href="#" class="btn btn-primary" style="margin-left: 250px;" id="demon">Next</a>*/ -->
+      </div>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction(ans) {
+        var button = document.createElement("button");
+        var img = document.createElement("img");
+        var img2 = document.createElement("img");
+        button.id = "Next";
+        img.id = "clap";
+        img2.id = "try";
+        var demon = document.querySelector("#demon");
+        var element = document.getElementById("try");
+        var element2 = document.getElementById("clap");
+        var element3 = document.getElementById("Next");
+
+        if (element != null) {
+          element.parentNode.removeChild(element);
+        }
+        if (element2 != null || element3 != null) {
+          element2.parentNode.removeChild(element2);
+          element3.parentNode.removeChild(element3);
+        }
+        if (element3 != null) {
+        }
+
+        if (ans == "5") {
+          button.innerHTML = "Next ";
+
+          button.style = "margin-left:100px; width:200px;";
+          button.className = "btn btn-primary";
+          button.onclick = function () {
+            location.href = "ques2.html";
+          };
+
+          img.src = "gif/clap.gif";
+          img.style = "width:150px; height:150px;margin-left:500px; ";
+
+          // img.style="";
+          // img.style="";
+          var body = document.getElementsByTagName("body")[0];
+          body.appendChild(img);
+          var body = document.getElementsByTagName("body")[0];
+          body.appendChild(button);
+          // document.getElementById("demo").innerHTML = "<img src='logo.png'>";
+
+          // $("demon").show();
+          // demon.style.display = 'block';
+        } else {
+          // document.getElementById("demo").innerHTML = "Incorret";
+          // $("demon").hide();
+
+          img2.src = "gif/try.gif";
+          img2.style =
+            "width:130px; height:130px;margin-left:600px; margin-top:30px; ";
+          var body = document.getElementsByTagName("body")[0];
+          body.appendChild(img2);
+          // demon.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
